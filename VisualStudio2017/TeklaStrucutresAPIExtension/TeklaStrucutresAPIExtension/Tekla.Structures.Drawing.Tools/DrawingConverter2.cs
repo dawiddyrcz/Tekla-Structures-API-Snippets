@@ -4,7 +4,7 @@ using TSD = Tekla.Structures.Drawing;
 using TSM = Tekla.Structures.Model;
 using TP = System.Threading.Tasks.Parallel;
 
-namespace TeklaStrucutresAPIExtension.Tekla.Structures.Drawing.Tools
+namespace Tekla.Structures.Drawing.Tools
 {
     class DrawingConverter2
     {
