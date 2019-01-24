@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Tekla.Structures.Geometry3d;
+using TSM = Tekla.Structures.Model;
 
 namespace Tekla.Structures.Model.Operations
 {
@@ -16,7 +17,7 @@ namespace Tekla.Structures.Model.Operations
                 Tekla.Structures.Model.Operations.Operation.Split(beam, splitPoint);
             }
         }
-
+        //TODO test
         ///Still in work not tested
         public static void Combine(List<Beam> beamList)
         {
@@ -58,6 +59,37 @@ namespace Tekla.Structures.Model.Operations
             {
                 b.Delete();
             }
+        }
+
+        /// <summary>Create current model autosave</summary>
+        public static void AutoSaveModel()
+        {
+            if (Tekla.Structures.TeklaStructures.Connect())
+            {
+                var akit = new Tekla.Structures.MacroBuilder();
+                akit.Callback("acmd_autosave_model", "", "main_frame");
+                akit.Run();
+                akit = null;
+            }
+        }
+
+        ///<summary>Save current model</summary>
+        public static void SaveModel()
+        {
+            if (Tekla.Structures.TeklaStructures.Connect())
+            {
+                var akit = new Tekla.Structures.MacroBuilder();
+                akit.Callback("acmd_save_model", "", "main_frame");
+                akit.Run();
+                akit = null;
+            }
+        }
+
+        //TODO check something wrong with 3d views
+        ///<summary>Reopen current model</summary>
+        public static void ReopenModel(bool loadAutosave = true)
+        {
+            Tekla.Structures.Model.Operations.Operation.Open(new TSM.Model().GetInfo().ModelPath, loadAutosave);
         }
     }
 }

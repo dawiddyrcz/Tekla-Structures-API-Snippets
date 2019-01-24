@@ -85,7 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tekla.Structures.Drawing.Automation\DrawingCreator2.cs" />
     <Compile Include="Tekla.Structures.Drawing.Tools\DrawingConverter2.cs" />
+    <Compile Include="Tekla.Structures.Drawing\DrawingList.cs" />
     <Compile Include="Tekla.Structures.Geometry3d\Intersection2.cs" />
     <Compile Include="Tekla.Structures.Model.Operations\Operation2.cs" />
   </ItemGroup>
