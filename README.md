@@ -5,19 +5,25 @@ Projects do not contains any Tekla.Structures API dll files, because its need th
 
 # Project content
 
-namespace Tekla.Structures.Drawing:
-	DrawingList2 - usefull methods to manipulate the drawing list (old Tekla Structures drawing list not document manager)
-	MultiDrawing2 - some multi drawing methods
-	SortPointsFromView2 - usefull methods to get points from the point list in the view. Very usefull when making dimmensions algotithms
+**namespace Tekla.Structures.Drawing:**
 
-namespace Tekla.Strucutres.Drawing.Automation:
-	DrawingCreator2 - drawing creations methods
+	**DrawingList2** - usefull methods to manipulate the drawing list (old Tekla Structures drawing list not document manager)
 
-namespace Tekla.Structures.Geometry3d
-	Intersection2 - added missing methods for creating intersection
+	**MultiDrawing2** - some multi drawing methods
 
-namespace Tekla.Structures.Model.Operations
-	Operation2 - methods to save, close, open, split, combine methods which are missing in original class
+	**SortPointsFromView2** - usefull methods to get points from the point list in the view. Very usefull when making dimmensions algotithms
+
+**namespace Tekla.Strucutres.Drawing.Automation:**
+
+	**DrawingCreator2** - drawing creations methods
+
+**namespace Tekla.Structures.Geometry3d**
+
+	**Intersection2** - added missing methods for creating intersection
+
+**namespace Tekla.Structures.Model.Operations**
+
+	**Operation2** - methods to save, close, open, split, combine methods which are missing in original class
 
 # How can you use it?
 
