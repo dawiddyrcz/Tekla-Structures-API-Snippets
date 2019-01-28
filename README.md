@@ -3,7 +3,7 @@ Set of my classes and methods, which extends Tekla Structures API
 
 Projects do not contains any Tekla.Structures API dll files, because its need the licensed copy of application Tekla Structures.
 
-#Project content
+# Project content
 
 namespace Tekla.Structures.Drawing:
 	DrawingList2 - usefull methods to manipulate the drawing list (old Tekla Structures drawing list not document manager)
@@ -19,7 +19,7 @@ namespace Tekla.Structures.Geometry3d
 namespace Tekla.Structures.Model.Operations
 	Operation2 - methods to save, close, open, split, combine methods which are missing in original class
 
-#How can you use it?
+# How can you use it?
 
 I recommend to copy files to your project. Because of different api versions of TS this is the most safe method.
 You can also compile project and add dll file as a reference, but it is not tested yet.
