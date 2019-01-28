@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{38DF79B4-68AE-4655-97F9-548B4EEFD179}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TeklaStrucutresAPIExtension</RootNamespace>
+    <RootNamespace>Tekla.Structures</RootNamespace>
     <AssemblyName>TeklaStrucutresAPIExtension</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -87,7 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tekla.Structures.Drawing.Automation\DrawingCreator2.cs" />
     <Compile Include="Tekla.Structures.Drawing.Tools\DrawingConverter2.cs" />
-    <Compile Include="Tekla.Structures.Drawing\DrawingList.cs" />
+    <Compile Include="Tekla.Structures.Drawing\DrawingList2.cs" />
+    <Compile Include="Tekla.Structures.Drawing\MultiDrawing2.cs" />
+    <Compile Include="Tekla.Structures.Drawing\SortPointsFromView2.cs" />
     <Compile Include="Tekla.Structures.Geometry3d\Intersection2.cs" />
     <Compile Include="Tekla.Structures.Model.Operations\Operation2.cs" />
   </ItemGroup>

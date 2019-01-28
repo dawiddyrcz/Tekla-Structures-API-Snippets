@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Tekla.Structures.Drawing
 {
-    class DrawingList
+    class DrawingList2
     {
         /// <summary>Opens drawing list window</summary>
         public static void ShowDrawingListWindow()
